@@ -1,0 +1,92 @@
+#full-screen-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADQSURBVHgB7ZTRDcIwDEQdxABhg4zCBmQDugIjMGnYgG4QEqmVUOQ2pjglSPckqx+Nz2c3NREAAAAAuifGeE3xjHqErCmpbSSHsmB6ONJlNMacSIO5bVLiE70DfUGqYVP4lfdDCket4TrOhae7lBmYHP9231xNT9VgYS5wU5qmy55palBirtZIa4NzwS2EUq/Glp/kQb3xV594obCVmuP01A0yBi5Mzu/WTGHyvJLnF6a7j8E99I4kY0xhVbsWbgPpmrmR7nrJDd8JAAAAAN3zArKFJa8KzKlRAAAAAElFTkSuQmCC');
+  width: 40px;
+  height: 40px;
+  z-index: 999999;
+  cursor: pointer;
+  opacity: 1;
+}
+#show-drivers {
+  position: fixed;
+  top: 10px;
+  right: 60px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAASCAYAAAC0EpUuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFZSURBVHgBpVTtVcIwFE08/Bc3iBPYEeoG3UCdgG5AN2idAJkANgAmKE7QOgFsUO+TG3zU5ET0nnNPkpf3/XJiTQLDMEyxZOADeAcewHdwb609mmsgzsA5eBjiWIDutw5zsKOhOG3AZ8oLnvV9kXJYqEwqlh/TLVUlZUzJUUmYm3RFNThTjrOQ0ioWlRVswFZ6TdmU54p2m7FRFrqgYa1a4rOqRo5bynOrjMVZDh5JD6f2S/DW6+FJ3dNWAkjvZ+DrDYUu4lCwBXvuxeEH91rvjU6/k+BzETyZAPiUxqgCetKa7lw6FZ2JYNTXanQnfW141/pn9HNylwa1GlIRqcS/nPXEnHopyM6pX8Jx7cFHDKcP6Eh/5T+QgKuJSWML7sAm9oFAvpdMedzpIZXmjxhOH49g8RWEw+mY0Yu5Hg6UefRGt0dN/z/IfRRLpxJtHskiBenzEhmuveATScERCOTgqLQAAAAASUVORK5CYII=');
+  background-repeat: no-repeat;
+  background-position: 10px;
+  width: 40px;
+  height: 40px;
+  z-index: 999999;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.larger-view #show-drivers, .larger-view #full-screen-button {
+  opacity: 0;
+}
+.larger-view:hover #show-drivers, .larger-view:hover #full-screen-button {
+  opacity: 1;
+}
+
+.larger-view .race-mode-player-__-3HgvS {
+  position: fixed  !important;
+  left: 0  !important;
+  top: 0  !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+}
+.larger-view .leaderboard-__-U6G2h {
+  width: 220px;
+  position: fixed;
+  right: 20px;
+  overflow: hidden;
+  top: 60px;
+  overflow: scroll;
+  bottom: 100px !important;
+  border-radius: 4px;
+  min-height: auto;
+  opacity: .9;
+  z-index: 9999;
+  box-shadow: 0 0 8px rgba(0,0,0,.5);
+  transition: ease-in-out .3s right;
+}
+.larger-view .hide-it.leaderboard-__-U6G2h {
+  right: -220px !important;
+}
+.larger-view #desktop-navigation-header {
+  display: none;
+}
+.larger-view .controlbar-container {
+  position: fixed !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
+/* Title */
+.larger-view .camera-card-__-30S_w {
+  display: none !important;
+}
+
+/* Remove Funky Styling to allow player to resize properly */
+.larger-view .playerWrapper {
+  top: 0px !important;
+  bottom: 0px !important;
+  position: fixed;
+}
+.larger-view .playerWrapper .absolutePosition {
+  position: relative !important;
+  height: 100%;
+}
+.larger-view .playerWrapper video {
+  height: 100% !important;
+  width: 100%;
+}
+.larger-view .playerWrapper .fill-parent {
+  top: 0px !important;
+  position: fixed;
+}
